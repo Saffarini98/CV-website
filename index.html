@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link rel="shortcut icon" type="image/png" href="images/Racoon.png" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/loader.css" rel="stylesheet" />
+    <link href="css/jquery.pagepiling.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 375px) and (max-width: 812px)"
+      href="css/screens/iPhoneX.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 768px) and (max-width: 1024px)"
+      href="css/screens/iPad.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>M.Saffarini</title>
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <span class="loader">
+        <span class="loader-inner"></span>
+      </span>
+    </div>
+    <header>
+      <div class="fixed-items fixed-icons">
+        <span
+          class="iconify"
+          data-icon="ion-social-googleplus"
+          data-inline="false"
+        ></span>
+        <span
+          class="iconify"
+          data-icon="ion-social-facebook"
+          data-inline="false"
+        ></span>
+        <span
+          class="iconify"
+          data-icon="ion:logo-github"
+          data-inline="false"
+        ></span>
+        <span
+          class="iconify"
+          data-icon="ion:logo-linkedin"
+          data-inline="false"
+        ></span>
+      </div>
+      <span class="burger fixed-items" onclick="openNav()">&#9776; </span>
+
+      <p class="fixed-items fixed-name">© Maxim Saffarini 2020.</p>
+    </header>
+
+    <!-- <canvas id="my-canvas" style="border: 1px solid blue;"></canvas> -->
+
+    <div id="pagepiling">
+      <div class="section sec1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 ">
+              <p class="intro-welcome">Maxim's website</p>
+            </div>
+            <div class="col-md-5">
+              <p class="section-small-titles">Introduction</p>
+              <h1 class="intro-title">
+                <span style="color: purple;">HELLO</span> MY NAME<br />
+                IS MAXIM.
+              </h1>
+              <hr class="hotizontal-line" />
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section sec2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <p class="section-small-titles">About me</p>
+              <h2 class="sec2-title">
+                MY MISSION IS <br />
+                <span style="color: purple;"> DESIGN & DEVELOP </span> THE BEST
+                <br />WEBSITES AROUND
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium dicta sit pariatur odio unde deleniti eveniet magni
+                cum, ad iure, vel nisi minima vero voluptates ut ipsum amet
+                iusto hic.
+              </p>
+            </div>
+            <div class="col-md-5 col-lg-5 ">
+              <div class="wrapped-progress">
+                <div>HTML/CSS</div>
+                <div
+                  class="progress"
+                  style="height: 8px;
+               "
+                >
+                  <div
+                    class="progress-bar "
+                    role="progressbar"
+                    style="width: 75%; background-color: purple; line-height: 20px; "
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div>JS/JQuery</div>
+                <div
+                  class="progress"
+                  style="height: 8px;
+              "
+                >
+                  <div
+                    class="progress-bar "
+                    role="progressbar"
+                    style="width: 75%; background-color: purple; line-height: 20px; "
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div>ReactJS</div>
+                <div
+                  class="progress"
+                  style="height: 8px;
+              "
+                >
+                  <div
+                    class="progress-bar "
+                    role="progressbar"
+                    style="width: 75%; background-color: purple; line-height: 20px; "
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div>Figma/Sketch</div>
+                <div
+                  class="progress"
+                  style="height: 8px;
+              "
+                >
+                  <div
+                    class="progress-bar "
+                    role="progressbar"
+                    style="width: 75%; background-color: purple; line-height: 20px; "
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div>Java (Standard Edition)</div>
+                <div
+                  class="progress"
+                  style="height: 8px;
+              margin-bottom: 50px;"
+                >
+                  <div
+                    class="progress-bar "
+                    role="progressbar"
+                    style="width: 75%; background-color: purple; line-height: 20px; "
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section sec3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>FEATURED WORKS</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section sec4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>FEATURED WORKS</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+    <!-- Pagepiling (scroll feature) script -->
+    <script>
+      $(document).ready(function() {
+        $("#pagepiling").pagepiling({
+          menu: "#menu",
+          anchors: ["page1", "page2", "page3", "page4"],
+          sectionsColor: ["#272727", "#000", "#272727", "#000"],
+          navigation: {
+            position: "right",
+            tooltips: ["Introduction", "About me", "My projects", "Contact me"]
+          }
+        });
+      });
+    </script>
+
+    <!-- Website components animations -->
+    <script type="text/javascript" src="/js/animate.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Loading script -->
+    <script>
+      $(window).on("load", function() {
+        $(".loader-wrapper").fadeOut(1500);
+      });
+    </script>
+
+    <!-- Confetti animation  -->
+    <script src="node_modules/confetti-js/dist/index.min.js"></script>
+    <!-- <script src="/js/confetti.js"></script> -->
+    <script>
+      var confettiElement = document.getElementById("my-canvas");
+      var confettiSettings = {
+        target: confettiElement,
+        animate: true,
+        clock: 50,
+        rotate: true
+      };
+      var confetti = new ConfettiGenerator(confettiSettings);
+      confetti.render();
+    </script>
+  </body>
+</html>

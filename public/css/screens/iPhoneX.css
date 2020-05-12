@@ -1,0 +1,72 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  font-family: ttnorrms;
+  padding: 5px 0px;
+}
+
+.section-small-titles {
+  color: rgb(53, 53, 53);
+  font-size: 22px;
+}
+
+.intro-welcome {
+  display: none;
+  /* padding: 1px 0px;
+  font-size: 19px;
+  transform: rotate(0deg); */
+}
+
+.intro-title {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.hotizontal-line {
+  border: 1px solid white;
+  width: 300px;
+  margin-top: 40px;
+}
+
+.burger {
+  right: 0;
+  padding: 17px 17px;
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+.fixed-name {
+  padding: 0px 10px;
+  bottom: 0;
+  font-size: 14px;
+}
+
+.fixed-icons {
+  top: 15px;
+  left: 20px;
+  font-size: 35px;
+}
+
+.fixed-icons :hover {
+  color: purple;
+  cursor: pointer;
+}
+
+.fixed-icons .iconify {
+  padding: 4px;
+  color: white;
+}
+
+.progress {
+  margin-bottom: 35px;
+}
+
+.wrapped-progress {
+  padding: 0px 20px 0px 20px;
+}
