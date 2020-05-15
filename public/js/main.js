@@ -1,15 +1,23 @@
-// $(window).on("load", function() {
-//   $(".loader-wrapper").fadeOut("slow");
+// var page = document.querySelector(".page");
+// var checkbox = document.querySelector('input[type="checkbox"]');
+// checkbox.addEventListener("change", function() {
+//   if (checkbox.checked) {
+//     page.classList.toggle("dark-theme");
+//     console.log("Checked");
+//   } else {
+//     page.classList.toggle("light-theme");
+//     console.log("Not checked");
+//   }
 // });
 
-// $(document).ready(function() {
-//   $("#pagepiling").pagepiling({
-//     menu: "#menu",
-//     anchors: ["page1", "page2", "page3", "page4"],
-//     sectionsColor: ["#272727", "#000", "#272727", "#000"],
-//     navigation: {
-//       position: "right",
-//       tooltips: ["Introduction", "About me", "My projects", "Contact me"]
-//     }
-//   });
-// });
+var page = document.querySelector(".page");
+var checkbox = document.querySelector('input[type="checkbox"]');
+checkbox.addEventListener("change", function() {
+  if (checkbox.checked) {
+    page.classList.remove("light-theme");
+    console.log("Not checked");
+  } else {
+    page.classList.add("light-theme");
+    console.log("Checked");
+  }
+});

@@ -28,43 +28,60 @@
 
     <title>M.Saffarini</title>
   </head>
-  <body>
+  <body class="page">
     <!-- <div class="loader-wrapper">
       <span class="loader">
         <span class="loader-inner"></span>
       </span>
     </div> -->
-    <header>
-      <div class="fixed-items fixed-icons">
-        <span
-          class="iconify"
-          data-icon="ion-social-googleplus"
-          data-inline="false"
-        ></span>
-        <span
-          class="iconify"
-          data-icon="ion-social-facebook"
-          data-inline="false"
-        ></span>
-        <span
-          class="iconify"
-          data-icon="ion:logo-github"
-          data-inline="false"
-        ></span>
-        <span
-          class="iconify"
-          data-icon="ion:logo-linkedin"
-          data-inline="false"
-        ></span>
-      </div>
-      <span class="burger fixed-items" onclick="openNav()">&#9776; </span>
-
-      <p class="fixed-items fixed-name">© Maxim Saffarini 2020.</p>
-    </header>
 
     <!-- <canvas id="my-canvas" style="border: 1px solid blue;"></canvas> -->
 
     <div id="pagepiling">
+      <header>
+        <div class="fixed-items fixed-icons">
+          <span
+            class="iconify"
+            data-icon="ion-social-googleplus"
+            data-inline="false"
+          ></span>
+          <span
+            class="iconify"
+            data-icon="ion-social-facebook"
+            data-inline="false"
+          ></span>
+          <span
+            class="iconify"
+            data-icon="ion:logo-github"
+            data-inline="false"
+          ></span>
+          <span
+            class="iconify"
+            data-icon="ion:logo-linkedin"
+            data-inline="false"
+          ></span>
+        </div>
+        <span class="burger fixed-items" onclick="openNav()">&#9776; </span>
+
+        <!---------------- Light mode Switcher ---------------->
+        <span
+          class="custom-control custom-switch"
+          style="position: absolute; z-index: 10; color: white;  top: 61px;
+              right: 300px;"
+        >
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customSwitches"
+            checked
+          />
+          <label class="custom-control-label" for="customSwitches"
+            >Toggle my sexy switcher</label
+          >
+        </span>
+
+        <p class="fixed-items fixed-name">© Maxim Saffarini 2020.</p>
+      </header>
       <div class="section sec1">
         <div class="container">
           <div class="row">
@@ -101,9 +118,10 @@
                 iusto hic.
               </p>
             </div>
+
             <div class="col-md-5 col-lg-5 ">
               <div class="wrapped-progress">
-                <div>HTML/CSS</div>
+                <div class="progress-text">HTML/CSS</div>
                 <div
                   class="progress"
                   style="height: 8px;
@@ -118,7 +136,7 @@
                     aria-valuemax="100"
                   ></div>
                 </div>
-                <div>JS/JQuery</div>
+                <div class="progress-text">JS/JQuery</div>
                 <div
                   class="progress"
                   style="height: 8px;
@@ -133,7 +151,7 @@
                     aria-valuemax="100"
                   ></div>
                 </div>
-                <div>ReactJS</div>
+                <div class="progress-text">ReactJS</div>
                 <div
                   class="progress"
                   style="height: 8px;
@@ -148,7 +166,7 @@
                     aria-valuemax="100"
                   ></div>
                 </div>
-                <div>Figma/Sketch</div>
+                <div class="progress-text">Figma/Sketch</div>
                 <div
                   class="progress"
                   style="height: 8px;
@@ -163,7 +181,7 @@
                     aria-valuemax="100"
                   ></div>
                 </div>
-                <div>Java (Standard Edition)</div>
+                <div class="progress-text">Java (Standard Edition)</div>
                 <div
                   class="progress"
                   style="height: 8px;
@@ -205,32 +223,36 @@
       </div>
     </div>
     <script src="/js/main.js"></script>
+    <script src="/js/animate.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
     <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="/js/jquery.pagepiling.js"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
-    <!-- Pagepiling (scroll feature) script -->
+    <!-- Pagepiling (scroll feature) script and Loading feature -->
     <script>
       $(document).ready(function() {
         $("#pagepiling").pagepiling({
           menu: "#menu",
           anchors: ["page1", "page2", "page3", "page4"],
-          sectionsColor: ["#272727", "#000", "#272727", "#000"],
+          // sectionsColor: ["#272727", "#000", "#272727", "#000"],
           navigation: {
             position: "right",
             tooltips: ["Introduction", "About me", "My projects", "Contact me"]
           }
         });
       });
+
+      //Loading script
+      $(window).on("load", function() {
+        $(".loader-wrapper").fadeOut(1500);
+      });
     </script>
 
-    <!-- Website components animations -->
-    <script type="text/javascript" src="/js/animate.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -241,13 +263,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Loading script -->
-    <script>
-      $(window).on("load", function() {
-        $(".loader-wrapper").fadeOut(1500);
-      });
-    </script>
 
     <!-- Confetti animation  -->
     <script src="node_modules/confetti-js/dist/index.min.js"></script>

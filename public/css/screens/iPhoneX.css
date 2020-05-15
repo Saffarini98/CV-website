@@ -35,15 +35,15 @@ h6 {
 
 .burger {
   right: 0;
-  padding: 17px 17px;
+  padding: 12px 17px;
   font-size: 40px;
   cursor: pointer;
   color: white;
 }
 
 .fixed-name {
-  padding: 0px 10px;
-  bottom: 0;
+  left: 1;
+  bottom: 1;
   font-size: 14px;
 }
 
