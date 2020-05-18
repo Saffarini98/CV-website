@@ -60,7 +60,6 @@ h6 {
 
 .fixed-icons .iconify {
   padding: 4px;
-  color: white;
 }
 
 .progress {
@@ -69,4 +68,14 @@ h6 {
 
 .wrapped-progress {
   padding: 0px 20px 0px 20px;
+}
+
+.switcher {
+  top: 70px;
+  right: 20px;
+}
+
+label {
+  padding-top: 5px;
+  font-size: 10px;
 }

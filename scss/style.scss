@@ -136,46 +136,63 @@ div {
   padding-left: 50px;
 }
 
+.progress-text-left {
+  color: white;
+}
+
+.progress-text-right {
+  color: white;
+  float: right;
+}
+.switcher {
+  z-index: 10;
+  top: 61px;
+  right: 300px;
+}
+
 /*========== Light theme ==========*/
+.light-theme {
+  .sec1 {
+    background-color: white;
+  }
 
-.light-theme .sec1 {
-  background-color: white;
-}
+  .sec2 {
+    background-color: rgb(240, 240, 240);
+  }
+  .sec3 {
+    background-color: black;
+  }
+  .sec4 {
+    background-color: white;
+  }
 
-.light-theme .sec2 {
-  background-color: lightgray;
-}
-.light-theme .sec3 {
-  background-color: black;
-}
-.light-theme .sec4 {
-  background-color: white;
-}
+  p,
+  h1,
+  h2,
+  h3 {
+    color: black;
+    font-family: ttnorrms;
+  }
 
-.light-theme p,
-.light-theme h1,
-.light-theme h2,
-.light-theme h3 {
-  color: black;
-  font-family: ttnorrms;
-}
+  .iconify {
+    color: black;
+  }
+  .hotizontal-line {
+    border: 1px solid black;
+  }
 
-.light-theme .iconify {
-  color: black;
-}
+  .burger {
+    color: black;
+  }
+  .custom-control-label {
+    color: black;
+  }
 
-.light-theme .hotizontal-line {
-  border: 1px solid black;
-}
-
-.light-theme .burger {
-  color: black;
-}
-
-.light-theme .custom-control-label {
-  color: black;
-}
-
-.light-theme .progress-text {
-  color: black;
+  .progress-text-right {
+    color: black;
+    float: right;
+  }
+  .progress-text-left {
+    color: black;
+  }
 }
