@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <link rel="shortcut icon" type="image/png" href="images/Racoon.png" />
+    <link rel="shortcut icon" type="image/png" href="images/Maxim_logo.svg" />
     <link href="/css/style.css" rel="stylesheet" />
     <link href="/css/loader.css" rel="stylesheet" />
     <link href="/css/jquery.pagepiling.css" rel="stylesheet" type="text/css" />
@@ -29,11 +29,11 @@
     <title>M.Saffarini</title>
   </head>
   <body class="page">
-    <div class="loader-wrapper">
+    <!-- <div class="loader-wrapper">
       <span class="loader">
         <span class="loader-inner"></span>
       </span>
-    </div>
+    </div> -->
 
     <!-- <canvas id="my-canvas" style="border: 1px solid blue;"></canvas> -->
 
@@ -76,7 +76,7 @@
             checked
           />
           <label class="custom-control-label" for="customSwitches"
-            >Toggle my sexy switcher</label
+            >Toggle that sexy switcher</label
           >
         </span>
         <p class="fixed-items fixed-name">© Maxim Saffarini 2020.</p>
@@ -95,7 +95,8 @@
               </h1>
               <hr class="hotizontal-line" />
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-1"></div>
+            <!-- <img src="/images/Maxim_logo.svg" alt="" style="width:350px;" /> -->
           </div>
         </div>
       </div>
@@ -121,7 +122,7 @@
             <div class="col-md-5 col-lg-5 ">
               <div class="wrapped-progress">
                 <span class="progress-text-left">HTML/CSS</span>
-                <span class="progress-text-right">70%</span>
+                <span class="progress-text-right">90%</span>
                 <div
                   class="progress"
                   style="height: 8px;
@@ -130,13 +131,13 @@
                   <div
                     class="progress-bar "
                     role="progressbar"
-                    style="width: 75%; background-color: purple; line-height: 20px; "
-                    aria-valuenow="75"
+                    style="width: 90%; background-color: purple; line-height: 20px; "
+                    aria-valuenow="90"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
                 </div>
-                <span class="progress-text-left">JS/JQuery</span>
+                <span class="progress-text-left">JavaScript/ES6</span>
                 <span class="progress-text-right">70%</span>
                 <div
                   class="progress"
@@ -146,14 +147,14 @@
                   <div
                     class="progress-bar "
                     role="progressbar"
-                    style="width: 75%; background-color: purple; line-height: 20px; "
-                    aria-valuenow="75"
+                    style="width: 70%; background-color: purple; line-height: 20px; "
+                    aria-valuenow="70"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
                 </div>
                 <span class="progress-text-left">ReactJS</span>
-                <span class="progress-text-right">70%</span>
+                <span class="progress-text-right">60%</span>
                 <div
                   class="progress"
                   style="height: 8px;
@@ -162,14 +163,14 @@
                   <div
                     class="progress-bar "
                     role="progressbar"
-                    style="width: 75%; background-color: purple; line-height: 20px; "
-                    aria-valuenow="75"
+                    style="width: 60%; background-color: purple; line-height: 20px; "
+                    aria-valuenow="60"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
                 </div>
                 <span class="progress-text-left">Figma/Sketch</span>
-                <span class="progress-text-right">70%</span>
+                <span class="progress-text-right">80%</span>
                 <div
                   class="progress"
                   style="height: 8px;
@@ -178,8 +179,8 @@
                   <div
                     class="progress-bar "
                     role="progressbar"
-                    style="width: 75%; background-color: purple; line-height: 20px; "
-                    aria-valuenow="75"
+                    style="width: 80%; background-color: purple; line-height: 20px; "
+                    aria-valuenow="80"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
@@ -209,8 +210,23 @@
       <div class="section sec3">
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
-              <h1>FEATURED WORKS</h1>
+            <div class="col-md-6">
+              <h1>Probably that is more important</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita doloribus fugiat similique explicabo quisquam sit
+                tenetur nam nesciunt sequi ad blanditiis possimus eaque,
+                deleniti tempora odit modi necessitatibus velit vero! Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Harum
+                laudantium fuga et corrupti eaque vitae, natus odio. Repellat
+                voluptate, quisquam nesciunt sit inventore, provident corporis
+                laudantium veritatis consequatur, labore eaque.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div id="charts">
+                <canvas id="myChart" width="800" height="600"></canvas>
+              </div>
             </div>
           </div>
         </div>
@@ -220,7 +236,105 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1>DO YOU WANT A WEBSITE?</h1>
+              <h1 class="projects__heading">FEATURED PROJECTS</h1>
+            </div>
+            <!-- <div class="col-lg-12"></div> -->
+            <!-- <div class="projects__container">
+              <div class="box">
+                <div class="content">
+                  <h2>01</h2>
+                  <h3>Static Website</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    corrupti blanditiis est odio consequuntur deserunt
+                    laboriosam dolore alias ipsa, id adipisci delectus
+                    voluptatem sit quia iste explicabo. Adipisci, nesciunt. Cum?
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="content">
+                  <h2>02</h2>
+                  <h3>React Project</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    corrupti blanditiis est odio consequuntur deserunt
+                    laboriosam dolore alias ipsa, id adipisci delectus
+                    voluptatem sit quia iste explicabo. Adipisci, nesciunt. Cum?
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="content">
+                  <h2>03</h2>
+                  <h3>Telegram Bot (NodeJS)</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    corrupti blanditiis est odio consequuntur deserunt
+                    laboriosam dolore alias ipsa, id adipisci delectus
+                    voluptatem sit quia iste explicabo. Adipisci, nesciunt. Cum?
+                  </p>
+                </div>
+              </div>
+            </div> -->
+            <div class="col-lg-4">
+              <div class="box">
+                <div class="content">
+                  <h2>01</h2>
+                  <h3>Static Website</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    corrupti blanditiis est odio consequuntur deserunt
+                    laboriosam dolore alias ipsa, id adipisci delectus
+                    voluptatem sit quia iste explicabo. Adipisci, nesciunt. Cum?
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="box">
+                <div class="content">
+                  <h2>02</h2>
+                  <h3>ReactJS Project</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    corrupti blanditiis est odio consequuntur deserunt
+                    laboriosam dolore alias ipsa, id adipisci delectus
+                    voluptatem sit quia iste explicabo. Adipisci, nesciunt. Cum?
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="box">
+                <div class="content">
+                  <h2>03</h2>
+                  <h3>Telegram Bot (NodeJS)</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    corrupti blanditiis est odio consequuntur deserunt
+                    laboriosam dolore alias ipsa, id adipisci delectus
+                    voluptatem sit quia iste explicabo. Adipisci, nesciunt. Cum?
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section sec5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 style="text-align: center">Let's get in touch</h1>
+
+              <p style="text-align: center">
+                2017 Designer. All right reserved | Design by Maxim
+              </p>
             </div>
           </div>
         </div>
@@ -232,7 +346,60 @@
     <script>
       new WOW().init();
     </script>
-
+    <!------------------------------------ Chart.js ------------------------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script>
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var myChart = new Chart(ctx, {
+        type: "radar",
+        data: {
+          labels: [
+            "Designing",
+            "Coding",
+            "Problemsolving",
+            "Figma/Sketch",
+            "ReactJS",
+            "Java (SE)"
+          ],
+          datasets: [
+            {
+              label: "Proffessional skills",
+              data: [30, 30, 30, 30, 30, 30],
+              backgroundColor: [
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(128, 0, 128, 0.315)"
+                // "rgba(255, 99, 132, 0.2)",
+                // "rgba(54, 162, 235, 0.2)",
+                // "rgba(255, 206, 86, 0.2)",
+                // "rgba(75, 192, 192, 0.2)",
+                // "rgba(153, 102, 255, 0.2)",
+                // "rgba(255, 159, 64, 0.2)"
+              ],
+              borderColor: [
+                // "rgba(128,0,128)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)"
+              ],
+              borderWidth: 2
+            }
+          ]
+        },
+        options: {
+          legend: {
+            labels: {
+              // This more specific font property overrides the global property
+              fontColor: "black",
+              fontSize: 23
+            }
+          }
+        }
+      });
+    </script>
+    <!-- JQuery.js -->
     <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="/js/jquery.pagepiling.js"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>

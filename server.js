@@ -4,7 +4,7 @@ const app = express();
 const config = require("./config");
 const sassMiddleware = require("node-sass-middleware");
 
-app.get("/", function(req, res) {
+app.get("/", (req, res) => {
   res.sendfile(__dirname + "/index.html");
 });
 
