@@ -45,6 +45,7 @@ h6 {
 
 .section-small-titles {
   color: rgb(53, 53, 53);
+  color: rgba(119, 119, 119, 0.596);
 }
 
 .hotizontal-line {
@@ -60,16 +61,16 @@ h6 {
   background-color: black;
 }
 .sec3 {
-  background-color: #272727;
+  background-color: rgb(151, 151, 151);
 }
 .sec4 {
   background-color: #272727;
 }
 .sec5 {
-  background-color: rgba(124, 100, 100, 0.712);
+  background-color: black;
 }
 .sec6 {
-  background-color: rgba(124, 100, 100, 0.712);
+  background-color: rgb(124, 100, 100);
 }
 
 .burger {
@@ -97,9 +98,10 @@ h6 {
 }
 
 .intro-title {
-  font-size: 49px;
+  font-size: 44px;
   font-weight: lighter;
 }
+
 .sec2-title {
   font-size: 30px;
 }
@@ -158,15 +160,48 @@ div {
   right: 300px;
 }
 /*======== Featured projects ========*/
+
 .projects__heading {
-  text-align: center;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
   padding-bottom: 40px;
+}
+.projects__heading span.typed-text {
+  font-weight: normal;
+  color: purple;
+}
+.projects__heading span.cursor {
+  // display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
 }
 
 .box {
   position: relative;
   height: 400px;
-  background: rgb(185, 174, 174);
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,13 +214,13 @@ div {
 
     h2 {
       position: absolute;
-      top: -60px;
+      top: -30px;
       right: 20px;
       margin: 0;
       padding: 0;
-      font-size: 10em;
-      color: purple;
-      opacity: 0.2;
+      font-size: 8em;
+      color: rgba(0, 0, 0, 0.267);
+      opacity: 0.6;
       transition: 0.5s;
     }
 
@@ -230,10 +265,10 @@ div {
   z-index: -1;
 }
 .box:nth-child(1):before {
-  background: linear-gradient(315deg, purple, black);
+  background: linear-gradient(385deg, purple, rgb(68, 46, 150));
 }
 .box:hover .content h2 {
-  top: -110px;
+  top: -80px;
 }
 
 .box:hover .content a {
@@ -259,7 +294,7 @@ div {
     background-color: white;
   }
   .sec4 {
-    background-color: grey;
+    background-color: rgb(240, 240, 240);
   }
   .sec5 {
     background-color: grey;
@@ -293,5 +328,29 @@ div {
   }
   .progress-text-left {
     color: black;
+  }
+  .box {
+    background: black;
+    .content {
+      position: relative;
+      padding: 20px;
+
+      h2 {
+        color: rgba(255, 255, 255, 0.445);
+        opacity: 0.6;
+        transition: 0.5s;
+      }
+
+      h3 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+      a {
+        border: 1px solid #fff;
+        color: white;
+      }
+    }
   }
 }
