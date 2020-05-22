@@ -214,7 +214,7 @@ p span.cursor.typing {
 
     h2 {
       position: absolute;
-      top: -30px;
+      top: -10px;
       right: 20px;
       margin: 0;
       padding: 0;
@@ -268,7 +268,7 @@ p span.cursor.typing {
   background: linear-gradient(385deg, purple, rgb(68, 46, 150));
 }
 .box:hover .content h2 {
-  top: -80px;
+  top: -40px;
 }
 
 .box:hover .content a {
@@ -330,7 +330,9 @@ p span.cursor.typing {
     color: black;
   }
   .box {
-    background: black;
+    // background: black;
+    // background: rgb(53, 53, 53);
+    background: #272727;
     .content {
       position: relative;
       padding: 20px;
