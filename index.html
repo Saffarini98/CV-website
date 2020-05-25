@@ -44,7 +44,7 @@
 
     <div id="pagepiling">
       <header>
-        <!---------------- Icons on Top ---------------->
+        <!-- Icons on Top -->
         <div class="fixed-items fixed-icons">
           <a
             href="https://www.facebook.com/maxim.saffarini"
@@ -72,8 +72,37 @@
             data-inline="false"
           ></span>
         </div>
-        <span class="burger fixed-items" onclick="openNav()">&#9776; </span>
-        <!---------------- Light mode Switcher ---------------->
+        <!-- Burger menu -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="overlay-content ">
+            <a href="#">About</a>
+            <a href="#">Tools </a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-secondary  nav__bottom__button"
+            onclick="window.open('https://drive.google.com/open?id=1gPeh5-jKzEZkqHnVwqH6Xvl51JMZABzP','_blank')"
+          >
+            Preview CV
+          </button>
+
+          <p class="nav__bottom__text">
+            © 2020 Junior front-end. All rights reserved | Design by Maxim
+          </p>
+        </div>
+        <span
+          style="font-size:30px;cursor:pointer"
+          onclick="openNav()"
+          class="burger"
+          >&#9776;
+        </span>
+
+        <!-- Light mode Switcher -->
         <span
           class="custom-control custom-switch switcher"
           style="position: absolute; "
@@ -84,14 +113,15 @@
             id="customSwitches"
             checked
           />
-          <label class="custom-control-label" for="customSwitches"
+          <label class="custom-control-label " for="customSwitches"
             >Toggle that sexy switcher</label
           >
         </span>
-
-        <!---------------- Left corner below ---------------->
         <p class="fixed-items fixed-name ">© Maxim Saffarini 2020.</p>
       </header>
+
+      <!---------------------------------------- SECTION: 1 ---------------------------------------->
+
       <div class="section sec1">
         <div class="container">
           <div class="row">
@@ -114,6 +144,8 @@
           </div>
         </div>
       </div>
+
+      <!---------------------------------------- SECTION: 2 ---------------------------------------->
 
       <div class="section sec2">
         <div class="container">
@@ -221,6 +253,8 @@
         </div>
       </div>
 
+      <!---------------------------------------- SECTION: 3 ---------------------------------------->
+
       <div class="section sec3">
         <div class="container">
           <div class="row">
@@ -246,6 +280,8 @@
           </div>
         </div>
       </div>
+
+      <!---------------------------------------- SECTION: 4 ---------------------------------------->
 
       <div class="section sec4">
         <div class="container">
@@ -273,8 +309,8 @@
               <div class="box">
                 <div class="content">
                   <img
-                    src="/images/handlebars.png"
-                    style="width:45px; "
+                    src="/images/handlebars-js.png"
+                    style="width:85px; "
                     alt=""
                   />
                   <h2>01</h2>
@@ -339,6 +375,8 @@
         </div>
       </div>
 
+      <!---------------------------------------- SECTION: 5 ---------------------------------------->
+
       <div class="section sec5">
         <div class="container">
           <div class="row">
@@ -352,6 +390,8 @@
           </div>
         </div>
       </div>
+
+      <!---------------------------------------- SECTION: 6 ---------------------------------------->
 
       <div class="section sec6">
         <div class="container">
@@ -437,7 +477,13 @@
           // sectionsColor: ["#272727", "#000", "#272727", "#000"],
           navigation: {
             position: "right",
-            tooltips: ["Introduction", "About me", "My projects", "Contact me"]
+            tooltips: [
+              "Introduction",
+              "About me",
+              "Skills",
+              "Featured works",
+              "Contact me"
+            ]
           }
         });
       });

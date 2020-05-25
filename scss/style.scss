@@ -31,6 +31,7 @@ canvas {
 }
 
 p,
+a,
 h1,
 h2,
 h3,
@@ -72,23 +73,94 @@ h6 {
 .sec6 {
   background-color: rgb(124, 100, 100);
 }
-
+/*========== Burger START ==========*/
 .burger {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
   right: 0;
   padding: 45px 30px;
   font-size: 30px;
-  cursor: pointer;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  right: 0;
+  // background-color: rgb(0, 0, 0);
+  // background-color: rgba(0, 0, 0, 0.9);
+  background-color: #292929;
+  overflow-x: hidden;
+  transition: 0.9s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: left;
+  padding-left: 90px;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+  transition: 0.4s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+  text-decoration: none;
+  color: purple;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.nav__bottom__text {
   color: white;
+  font-size: 13px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.nav__bottom__button {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  &:hover {
+    background-color: purple;
+  }
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
+  .overlay a {
+    font-size: 20px;
   }
-  .sidenav a {
-    font-size: 18px;
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
+/*============ Burger END============*/
 
 .intro-welcome {
   padding: 80px 0px;
@@ -306,6 +378,10 @@ p span.cursor.typing {
   h3 {
     color: black;
     font-family: ttnorrms;
+  }
+
+  .burger {
+    color: black;
   }
 
   .iconify {
