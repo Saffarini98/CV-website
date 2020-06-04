@@ -1,3 +1,5 @@
+@import "./iphonex.scss";
+
 /*============ Predefined variables ============*/
 
 $darkgrey-background: #272727;
@@ -21,6 +23,12 @@ $darkgrey-background: #272727;
 body {
   color: white;
 }
+// body::selection {
+//   background: purple; /* WebKit/Blink Browsers */
+// }
+// body::-moz-selection {
+//   background: purple; /* Gecko Browsers */
+// }
 
 canvas {
   position: absolute;
@@ -49,10 +57,12 @@ h6 {
   color: rgba(119, 119, 119, 0.596);
 }
 
-.hotizontal-line {
+.hotizontal__line {
   border: 1px solid white;
   width: 420px;
   margin-top: 40px;
+  // position: absolute;
+  // left: 0;
 }
 
 .sec1 {
@@ -160,21 +170,20 @@ h6 {
     right: 35px;
   }
 }
-/*============ Burger END============*/
 
-.intro-welcome {
+.intro__welcome {
   padding: 80px 0px;
   color: white;
   font-size: 19px;
   transform: rotate(270deg);
 }
 
-.intro-title {
+.intro__title {
   font-size: 44px;
   font-weight: lighter;
 }
 
-.sec2-title {
+.sec2__title {
   font-size: 30px;
 }
 
@@ -231,6 +240,19 @@ div {
   top: 61px;
   right: 300px;
 }
+
+.stat__list {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  span {
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+  }
+}
 /*======== Featured projects ========*/
 
 .projects__heading {
@@ -273,6 +295,7 @@ p span.cursor.typing {
 .box {
   position: relative;
   height: 400px;
+  width: 80%;
   background: white;
   display: flex;
   justify-content: center;
@@ -387,7 +410,7 @@ p span.cursor.typing {
   .iconify {
     color: black;
   }
-  .hotizontal-line {
+  .hotizontal__line {
     border: 1px solid black;
   }
 
@@ -405,6 +428,11 @@ p span.cursor.typing {
   .progress-text-left {
     color: black;
   }
+
+  .stat__list {
+    color: black;
+  }
+
   .box {
     // background: black;
     // background: rgb(53, 53, 53);
