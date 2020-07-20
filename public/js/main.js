@@ -2,9 +2,7 @@
 const page = document.querySelector(".page");
 const checkbox = document.querySelector('input[type="checkbox"]');
 checkbox.addEventListener("change", () => {
-  checkbox.checked
-    ? page.classList.remove("light-theme")
-    : page.classList.add("light-theme");
+  checkbox.checked ? page.classList.remove("light-theme") : page.classList.add("light-theme");
 });
 
 //===============================// Burger Menu //===============================//
@@ -21,10 +19,11 @@ const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = [
-  "HTML5, CSS3, Figma/Sketch",
-  "Java, JavaScript, ReactJS, NextJS, MongoDB",
-  "IntellJ IDEA, VS Code, Atom, Postman ",
-  "NodeJS, Express, APIs",
+  "HTML5, CSS3, SCSS, Figma/Sketch",
+  "Java, JavaScript, ReactJS, NextJS, Redux",
+  "IntellJ IDEA, VSCode, Atom ",
+  "NodeJS, Express, REST APIs, GraphQL, MongoDB",
+  "Postman, Jest, Silenium, SoapAPI",
   "LIFE in general I guess"
 ];
 const typingDelay = 100;
@@ -35,8 +34,7 @@ let charIndex = 0;
 
 const type = () => {
   if (charIndex < textArray[textArrayIndex].length) {
-    if (!cursorSpan.classList.contains("typing"))
-      cursorSpan.classList.add("typing");
+    if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
     charIndex++;
     setTimeout(type, typingDelay);
@@ -48,12 +46,8 @@ const type = () => {
 
 const erase = () => {
   if (charIndex > 0) {
-    if (!cursorSpan.classList.contains("typing"))
-      cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(
-      0,
-      charIndex - 1
-    );
+    if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
     charIndex--;
     setTimeout(erase, erasingDelay);
   } else {

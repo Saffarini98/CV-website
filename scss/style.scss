@@ -61,8 +61,6 @@ h6 {
   border: 1px solid white;
   width: 420px;
   margin-top: 40px;
-  // position: absolute;
-  // left: 0;
 }
 
 .sec1 {
@@ -78,11 +76,9 @@ h6 {
   background-color: #272727;
 }
 .sec5 {
-  background-color: black;
-}
-.sec6 {
   background-color: rgb(124, 100, 100);
 }
+
 /*========== Burger START ==========*/
 .burger {
   cursor: pointer;
@@ -243,9 +239,9 @@ div {
 
 .stat__list {
   position: absolute;
-  left: 30%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  // left: 30%;
+  // top: 50%;
+  // transform: translate(-50%, -50%);
   color: white;
   span {
     font-size: 20px;
@@ -292,15 +288,16 @@ p span.cursor.typing {
   }
 }
 
+.pos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .box {
   position: relative;
   height: 400px;
   width: 80%;
   background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // border: 3px solid purple;
   border-radius: 8px;
 
   .content {
@@ -376,6 +373,20 @@ p span.cursor.typing {
   background: #fff;
 }
 
+/*======== Contact me ========*/
+form {
+  label {
+    font-size: 20px;
+  }
+  div {
+    width: 100%;
+  }
+  button {
+    position: absolute;
+    right: 0;
+  }
+}
+
 /*========== Light theme ==========*/
 .light-theme {
   .sec1 {
@@ -390,9 +401,6 @@ p span.cursor.typing {
   }
   .sec4 {
     background-color: rgb(240, 240, 240);
-  }
-  .sec5 {
-    background-color: grey;
   }
 
   p,
