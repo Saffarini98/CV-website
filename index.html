@@ -7,8 +7,6 @@
     <!-- <link href="/css/animate.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link href="/css/jquery.pagepiling.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" media="screen and (min-width: 375px) and (max-width: 812px)" href="/css/screens/iPhoneX.css" />
-    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="/css/screens/iPad.css" />
 
     <link
       rel="stylesheet"
@@ -54,7 +52,7 @@
           <button
             type="button"
             class="btn btn-outline-secondary nav__bottom__button"
-            onclick="window.open('https://drive.google.com/open?id=1gPeh5-jKzEZkqHnVwqH6Xvl51JMZABzP','_blank')"
+            onclick="window.open('https://drive.google.com/file/d/17OCui4ga84kLfWrIJ5CKrS-Zf3dmwrd6/view?usp=sharing','_blank')"
           >
             Preview CV
           </button>
@@ -332,13 +330,11 @@
           <div class="row">
             <div class="col-md-12">
               <h1 style="text-align: center">Let's get in touch</h1>
-
               <p style="text-align: center">
                 2020 Designer. All right reserved | Design by Maxim
               </p>
-              <form>
-                <div class="k">
-                  <div class="form-group">
+              <form name="formValid"  method="post" action="/action_page.php"> 
+                <div class="form-group">
                 <label for="formGroupExampleInput">Name</label>
                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Johan" />
                 </div>
@@ -350,9 +346,7 @@
                 <label for="formGroupExampleInput2">Phone number</label>
                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="+44735780099" />
                 </div>
-              </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-
+                <button type="submit" class="btn btn-primary" onclick="validate()">Sign in</button>
               </form>
             </div>
           </div>
@@ -405,14 +399,14 @@
         }
       });
     </script>
-    <script src="js/wow.min.js"></script>
+    <script src="vendor/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
-    <!-- JQuery.js -->
+    <!---------------------------------- JQuery.js ---------------------------------->
     <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="/js/jquery-3.4.1.min.js"></script>
-    <script src="/js/jquery.pagepiling.js"></script>
+    <script src="/vendor/jquery-3.4.1.min.js"></script>
+    <script src="/vendor/jquery.pagepiling.js"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
     <!-- Pagepiling (scroll feature) script and Loading feature -->

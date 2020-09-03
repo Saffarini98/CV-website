@@ -62,3 +62,23 @@ document.addEventListener("DOMContentLoaded", function() {
   // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+//================================// Form validation //================================//
+var name = document.forms["formValid"]["First name"];
+var email = document.forms["formValid"]["Email"];
+var phone = document.forms["formValid"]["Phone Number"];
+
+const validate = () => {
+  if (name.value == "") {
+    window.alert("Please enter your name.");
+    name.focus();
+    return false;
+  } else if (email.value == "") {
+    window.alert("Please enter your email");
+    email.focus();
+  } else if (phone.value == "") {
+    window.alert("Please enter your phone number.");
+    phone.focus();
+  }
+  return true;
+};
